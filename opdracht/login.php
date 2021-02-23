@@ -27,7 +27,7 @@ if(isset($_POST['form_login'])) {
         $_SESSION['email'] = $database_gegevens['email'];
         $_SESSION['password'] = $database_gegevens['password'];
 
-        header('location: dashboard.php');
+        header('location: DashboardK.php');
         }
         if ($database_gegevens['password'] == $password) {
             echo "de gebruiker mag inloggen";

@@ -2,13 +2,12 @@
 
  require('db.conn/db.connDashboardM.php');
 
-  session_start();
-   if(isset($_SESSION['name'])) {
+ session_start();
+   if(isset($_SESSION['Vname'])) {
 
-    $name = $_SESSION['name'];
+    $name = $_SESSION['Vname'];
     echo 'Welkom' . " "  .$name;
  }
-
 ?>
 
 
@@ -75,18 +74,18 @@
     <tr>
       <th>voornaam</th>
       <th>achternaam</th>
-      <th>achternaam</th>
-      <th>achternaam</th>
-      <th>achternaam</th>
+      <th>email</th>
+      <th>update</th>
+      <th>verwijder</th>
     </tr>
  <tbody>
     <?php foreach($database_gegevens as $data):?>
      <tr>
 
-      <td><?php echo $data["name"]?></td>
+      <td><?php echo $data["Vname"]?></td>
       <td><?php echo $data["achternaam"]?></td>
       <td><?php echo $data["email"]?></td>
-      <td><?php echo $data["achternaam"]?></td>
+      <td><a href="update.php?id=<?php echo $data['id']; ?>"  class="btn btn-light">Update</a></td></td>
       <td><a href="db.conn/db.connDelete.php?id=<?php echo $data['id']; ?>"  class="btn btn-danger">Verwijder</a></td></td>
 
     </tr>

@@ -57,7 +57,7 @@ if(isset($_POST['form_login'])) {
        session_start();
 
 
-       $_SESSION['name'] = $database_gegevens['name'];
+       $_SESSION['Vname'] = $database_gegevens['Vname'];
        $_SESSION['email'] = $database_gegevens['email'];
        $_SESSION['password'] = $database_gegevens['password'];
 

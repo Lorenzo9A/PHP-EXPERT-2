@@ -3,9 +3,9 @@
  require('db.conn/db.connDashboard.php');
 
   session_start();
-   if(isset($_SESSION['name'])) {
+   if(isset($_SESSION['Vname'])) {
 
-    $name = $_SESSION['name'];
+    $name = $_SESSION['Vname'];
     echo 'Welkom' . " "  .$name;
  }
 
@@ -80,7 +80,7 @@
     <?php foreach($database_gegevens as $data):?>
      <tr>
 
-      <td><?php echo $data["name"]?></td>
+      <td><?php echo $data["Vname"]?></td>
       <td><?php echo $data["achternaam"]?></td>
 
     </tr>

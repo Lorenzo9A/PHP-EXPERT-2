@@ -19,7 +19,7 @@ Je dient gebruik te maken van
 
 ## Casus
 
-Fietsenmaker Snelle Jelle wil na een reparatiebeurt zijn klanten per SMS of Whatspapp op de hoogte stellen dat de reparatie van de fiets klaar is. In dit bericht wil hij ook vertellen hoe hoog de reparatiekosten zijn.​
+Fietsenmaker Snelle Jelle wil na een reparatiebeurt zijn klanten per SMS of Whatsapp op de hoogte stellen dat de reparatie van de fiets klaar is. In dit bericht wil hij ook vertellen hoe hoog de reparatiekosten zijn.​
 
 - Iedere gebruiker dient in te loggen en uit te loggen​
 

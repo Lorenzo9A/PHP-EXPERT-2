@@ -23,7 +23,7 @@ if(isset($_POST['form_login'])) {
         session_start();
 
 
-        $_SESSION['voornaam'] = $database_gegevens['voornaam'];
+        $_SESSION['name'] = $database_gegevens['name'];
         $_SESSION['email'] = $database_gegevens['email'];
         $_SESSION['password'] = $database_gegevens['password'];
 
@@ -51,7 +51,8 @@ if(isset($_POST['form_login'])) {
 <body class="text-center">
     <link rel="stylesheet" href="login.css">
     <main class="form-signin">
-        <h1 class="h3 mb-3 fw-normal">Log In</h1>
+      <form method="post" action="">
+        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
         <label for="form_email" class="visually-hidden">Email address</label>
         <input type="email" id="form_email" class="form-control" name="form_email" placeholder="Email address" required autofocus>
         <label for="form_password" class="visually-hidden">Password</label>
@@ -59,6 +60,7 @@ if(isset($_POST['form_login'])) {
         <div class="checkbox mb-3">
         </div>
         <button class="w-100 btn btn-lg btn-primary" type="submit" name="form_login">Sign in</button>
+        <p class="mt-5 mb-3 text-muted">&copy; 2020-2021</p>
         <?php
         
              echo date("l jS \of F Y h:i:s A");

@@ -42,7 +42,7 @@ if(isset($_POST['form_login'])) {
    $password   = $_POST['form_password'];
 
 
-   $sql = "SELECT * from klanten WHERE email = :ph_email";
+   $sql = "SELECT * from medewerker WHERE email = :ph_email";
    $statement = $db_conn->prepare($sql);
    $statement->bindParam(":ph_email", $email); 
    $statement->execute();
@@ -61,7 +61,7 @@ if(isset($_POST['form_login'])) {
        $_SESSION['email'] = $database_gegevens['email'];
        $_SESSION['password'] = $database_gegevens['password'];
 
-       header('location: dashboard.php');
+       header('location: dashboardM.php');
        }
        if ($database_gegevens['password'] == $password) {
            echo "de gebruiker mag inloggen";

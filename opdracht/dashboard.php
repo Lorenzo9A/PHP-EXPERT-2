@@ -73,8 +73,8 @@
 
  <table>
     <tr>
-      <th>ID</th>
-      <th>Voornaam</th>
+      <th>voornaam</th>
+      <th>achternaam</th>
     </tr>
  <tbody>
     <?php foreach($database_gegevens as $data):?>

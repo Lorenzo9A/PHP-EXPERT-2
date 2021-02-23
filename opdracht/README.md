@@ -52,7 +52,7 @@ Een __reparatie__ heeft de volgende eigenschappen:
 - datum
 - tijdstip
 - opmerkingen
-- kosten
+- kosten 
 
 Een __fiets__ heeft de volgende eigenschappen:
 

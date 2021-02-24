@@ -17,7 +17,7 @@
 <html>
 <body>
 
-<h2>Update Lid <?php echo  $database_gegevens['Vname']?></h2>
+<h2>Update <?php echo  $database_gegevens['Vname']?></h2>
 
 <form action="db.conn/db.connUpdate.php" method="get">
         <input type="hidden" name="id" value="<?php echo $_GET['id'];?>">

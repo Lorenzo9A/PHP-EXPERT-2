@@ -19,10 +19,10 @@ $sql = "SELECT * FROM klanten
                 JOIN fiets ON fiets.klant_id = klanten.id 
               
                 WHERE email = :email";
-$statement = $db_conn->prepare($sql);
-$statement->bindParam(":email", $email_klant);
-$statement->execute();
-$fietsenVanKlant = $statement->fetchAll(PDO::FETCH_ASSOC);
+ $statement = $db_conn->prepare($sql);
+ $statement->bindParam(":email", $email_klant);
+ $statement->execute();
+ $fietsenVanKlant = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 $sql = "SELECT *, reparatie.id AS reparatie_id, klanten.id AS klanten_id, fiets.id AS fiets_id FROM reparatie 
                 JOIN klanten ON reparatie.klant_id = klanten.id 
@@ -58,7 +58,7 @@ $reparatiesVanKlant = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 <table>
     <tr>
-    <h2>Overzicht klant:</h2>
+    <h2>Overzicht fietsen:</h2>
       <th>id</th>
       <th>Naam Klant</th>
       <th>Merk Fiets</th>
@@ -87,7 +87,7 @@ $reparatiesVanKlant = $statement->fetchAll(PDO::FETCH_ASSOC);
  <table>
     <tr>
      <br>
-     <h2>Overzicht fietsen:</h2>
+     <h2>Overzicht reparatie:</h2>
       <th>id</th>
       <th>Naam Klant</th>
       <th>Merk Fiets</th>
